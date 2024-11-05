@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller</title>
+    <link href="style.css" rel="StyleSheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">DICE ROLLER 🎲</h1>
+
+      <img src="./image/dice.png" class="dice-image" id="dice" />
+
+      <button type="button" class="button" onclick="diceclick()">
+        Click Dice
+      </button>
+    </div>
+
+    <script>
+      function resetDice() {
+        const diceIamge = document.getElementById("dice");
+        diceIamge.src = "./image/dice.png";
+      }
+
+      function diceclick() {
+        const min = 1;
+        const max = 6;
+        const randomNum = Math.floor(Math.random() * (max - min)) + min;
+
+        const diceIamge = document.getElementById("dice");
+
+        if (randomNum == 1) {
+          diceIamge.src = "./image/one.png";
+
+        } else if (randomNum == 2) {
+
+          diceIamge.src = "./image/two.png";
+        } else if (randomNum == 3) {
+
+          diceIamge.src = "./image/three.png";
+        } else if (randomNum == 4) {
+
+          diceIamge.src = "./image/four.png";
+        } else if (randomNum == 5) {
+
+          diceIamge.src = "./image/five.png";
+        } else {
+
+          diceIamge.src = "./image/six.png";
+        }
+        setTimeout(resetDice, 4000);
+      }
+    </script>
+  </body>
+</html>

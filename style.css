@@ -1,0 +1,33 @@
+
+
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(241, 212, 212);
+    border: 3px double rgb(254, 4, 4);
+    border-radius: 10px;
+    display: block;
+    margin: 50px auto;
+}
+.heading{
+    text-align: center;
+    color: rgb(227, 82, 82);
+    font-size: 40px;
+}
+.dice-image{
+    height: 55%;
+    width: 55%;
+    display: block;
+    margin: 30px auto;
+}
+.button{
+    border: solid 3px red;
+    border-radius: 5px;
+    background-color: rgb(255, 5, 5);
+    color: white;
+    padding: 8px 25px;
+    font-size: 25px;
+    display: block;
+    margin: 40px auto;
+    cursor: pointer;
+}
